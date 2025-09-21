@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Technology Summit</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -38,16 +38,56 @@
   </nav>
   
   <div class="container my-5">
-    <div class="row mb-4">
-      <div class="col-12 bg-light p-5 rounded">
-        <h1 class="text-left">Welcome to Global Technology Summit</h1>
-        <p class="text-left">Join top innovators, industry leaders, and experts shaping the future of technology.</p>
-        <button class="btn btn-primary">Get Your Ticket</button>
+    <!-- Carousel section -->
+    <div id="summitCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <div class="bg-light p-5 text-center">
+            <h1>The Future of AI & Automation</h1>
+            <p>How artificial intelligence is transforming industries, from automation to creative applications.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bg-light p-5 text-center">
+            <h1>Cybersecurity & Ethical Hacking</h1>
+            <p>Experts reveal the latest cybersecurity trends, threats, and defense strategies in a digital world.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bg-light p-5 text-center">
+            <h1>Global Networking & Collaboration</h1>
+            <p>Connect with industry leaders, founders, and innovators to exchange ideas and opportunities.</p>
+            <button class="btn btn-primary">Register</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bg-light p-5 text-center">
+            <h1>Breakthroughs in Health Tech</h1>
+            <p>How AI, biotech, and wearables are revolutionizing personalized medicine and patient care.</p>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#summitCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#summitCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>The Future of AI & Automation</h2>
           <p>How artificial intelligence is transforming industries, from automation to creative applications.</p>
@@ -55,7 +95,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>Cybersecurity & Ethical Hacking</h2>
           <p>Experts reveal the latest cybersecurity trends, threats, and defense strategies in a digital world.</p>
@@ -63,7 +103,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>Global Networking & Collaboration</h2>
           <p>Connect with industry leaders, founders, and innovators to exchange ideas and opportunities.</p>
@@ -71,7 +111,7 @@
         </div>        
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>Breakthroughs in Health Tech</h2>
           <p>How AI, biotech, and wearables are revolutionizing personalized medicine and patient care.</p>
@@ -79,7 +119,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>Startup Pitch & Investor Panel</h2>
           <p>Early-stage startups compete for funding and mentorship in front of top industry investors.</p>
@@ -87,7 +127,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-12 mb-4 d-flex align-items-stretch">
         <div class="card p-3">
           <h2>Expanding Tech for Social Good</h2>
           <p>How developers and organizations are using technology to solve global challenges.</p>
@@ -105,6 +145,38 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Detect Google Translate language changes and apply RTL/LTR dynamically
+    (function() {
+      const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+      function getLang() {
+        // Try to get lang from <html>
+        let lang = document.documentElement.lang;
+        // Google Translate may inject a <meta name="google" content="notranslate"> or change lang attribute
+        // Sometimes, Google Translate adds a .goog-te-combo select element
+        const gtCombo = document.querySelector('.goog-te-combo');
+        if (gtCombo && gtCombo.value) {
+          lang = gtCombo.value;
+        }
+        return lang ? lang.split('-')[0] : 'en';
+      }
+      function updateDir() {
+        const lang = getLang();
+        if (rtlLangs.includes(lang)) {
+          document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      }
+      // Observe DOM changes for Google Translate
+      const observer = new MutationObserver(updateDir);
+      observer.observe(document.body, { childList: true, subtree: true });
+      // Also check periodically in case Google Translate updates asynchronously
+      setInterval(updateDir, 1000);
+      // Initial check
+      updateDir();
+    })();
+  </script>
 </body>
 </html>
